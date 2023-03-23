@@ -55,3 +55,19 @@
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
 	color: #fff;
 }
+ .aboutUs{
+     background-color: rgb(193, 193, 245);
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	margin-top:  2%;
+	margin-left: 30%;
+	margin-right: 30%;
+	width: 40%;
+	}
+.titulo{
+	display: flex;
+	justify-content: center;
+	margin-top: 3%;
+	
+}
