@@ -1,46 +1,68 @@
+/* Estilos para la imagen del carrusel */
 .carousel-item {
 	height: 100vh;
 	min-height: 300px;
+	margin: 0;
 	background: no-repeat center center scroll;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
+
+@media (min-width: 992px) {
+	.carousel-item {
+		height: 100vh;
+	}
+}
+
+@media (max-width: 991px) {
+	.carousel-item {
+		height: 40vh;
+	}
+}
+
+/* Estilos para el texto del carrusel */
 .carousel-caption {
 	bottom: 270px;
 }
+
 .carousel-caption h5 {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	width: 0;
-  	overflow: hidden;
-  	white-space: nowrap;
-  	font-size: 2rem;
-  	margin: 0 auto;
-  	font-family: "Courier New";
-  	border-right: 0.15em solid #18bdec;
-  	animation: typing 2s steps(10) 1s 1 normal both, blink 1s steps(1) infinite;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 2rem;
+	margin: 0 auto;
+	font-family: "Courier New";
+	border-right: 0.15em solid #18bdec;
+	animation: typing 2s steps(10) 1s 1 normal both, blink 1s steps(1) infinite;
 }
+
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 15%;
-  }
+	from {
+		width: 0;
+	}
+	to {
+		width: 15%;
+	}
 }
+
 @keyframes blink {
-  20% {
-    border-color: transparent;
-  }
+	20% {
+		border-color: transparent;
+	}
 }
+
 .carousel-caption p {
 	width: 75%;
 	margin: auto;
 	font-size: 18px;
 	line-height: 1.9;
 }
+
+/* Estilos para la barra de navegación */
 .navbar-light .navbar-brand {
 	color: #fff;
 	font-size: 25px;
@@ -48,45 +70,86 @@
 	font-weight: bold;
 	letter-spacing: 2px;
 }
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
 	color: #fff;
 }
+
 .navbar-light .navbar-nav .nav-link {
 	color: #fff;
 }
+
 .navbar-toggler {
 	background: #fff;
-}
-.navbar-nav {
-	text-align: center;
-}
-.nav-link {
-	padding: .2rem 1rem;
-}
-.nav-link.active, .nav-link:focus {
-	color: #fff;
-}
-.navbar-toggler {
 	padding: 1px 5px;
 	font-size: 18px;
 	line-height: 0.3;
 }
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+
+.navbar-nav {
+	text-align: center;
+}
+
+.nav-link {
+	padding: .2rem 1rem;
+}
+
+.nav-link.active,
+.nav-link:focus {
 	color: #fff;
 }
- .aboutUs{
-     background-color: rgb(193, 193, 245);
-	 display: flex;
-	 justify-content: center;
-	 align-items: center;
-	margin-top:  2%;
-	margin-left: 30%;
-	margin-right: 30%;
-	width: 40%;
-	}
-.titulo{
-	display: flex;
-	justify-content: center;
-	margin-top: 3%;
-	
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #fff;
 }
+
+/* Estilos para la imagen */
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Estilos para el contenedor del texto */
+.text-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 768px) {
+	.col-md-6 {
+		width: 100%;
+	}
+}
+/* lineup class and keyframes */
+.lineUp {
+	animation: 4s anim-lineUp ease-out infinite;
+  }
+  @keyframes anim-lineUp {
+	0% {
+	  opacity: 0;
+	  transform: translateY(80%);
+	}
+	20% {
+	  opacity: 0;
+	}
+	50% {
+	  opacity: 1;
+	  transform: translateY(0%);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0%);
+	}
+  }
