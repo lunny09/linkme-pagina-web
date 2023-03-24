@@ -11,10 +11,29 @@
 	bottom: 270px;
 }
 .carousel-caption h5 {
-	font-size: 45px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	margin-top: 25px;
+	width: 0;
+  	overflow: hidden;
+  	white-space: nowrap;
+  	font-size: 2rem;
+  	margin: 0 auto;
+  	font-family: "Courier New";
+  	border-right: 0.15em solid #18bdec;
+  	animation: typing 2s steps(10) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 15%;
+  }
+}
+@keyframes blink {
+  20% {
+    border-color: transparent;
+  }
 }
 .carousel-caption p {
 	width: 75%;
